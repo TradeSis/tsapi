@@ -251,6 +251,12 @@ echo "hml=".$hml."\n";
 
 switch ($aplicacao) {
 
+    case "services":
+        // NOVA VERSAO - MOVER app/servicos para servicos/app
+        include __DIR__ . "/../services/app/versao.php";
+        //include "app/servicos/versao.php";
+        break;
+
     case "servicos":
         // NOVA VERSAO - MOVER app/servicos para servicos/app
         include __DIR__ . "/../servicos/app/versao.php";
